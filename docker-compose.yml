@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  tf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./py:/vol
+      - ./.cache:/root/.cache/huggingface/transformers
